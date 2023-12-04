@@ -1,0 +1,23 @@
+
+Query #1
+
+mutation {
+	createLink(
+    url: "http://github.com",
+    description: "Lots of code!"
+  ) {
+    id
+    url
+    description
+  }
+}
+
+Query #2
+
+query {
+  links {
+    id
+    url
+    description
+  }
+}
